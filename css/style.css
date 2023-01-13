@@ -1,0 +1,232 @@
+/* Universal box sizing */
+ * {   
+ box-sizing: border-box;
+ }
+  
+ /* Style the header */
+ .header {   
+ background-color:rgba(179, 199, 92, 0.527);   
+ text-align: center;   
+ padding: 20px;
+ }
+  
+ /* Style the top navigation bar */
+ .topnav {   
+ overflow: hidden;   
+ background-color: black;
+ }
+  
+ /* Style the topnav links */
+ .topnav a {
+     float:left;   
+     display: block;
+     color:white;   
+     text-align: center;   
+     padding: 18px 20px;   
+     text-decoration: none;
+     font-size: large;
+     
+ }
+  
+ /* Change color on hover */
+ .topnav a:hover {   
+    background-color: white;
+    color:black;
+ }
+ 
+ /* Highlight an active menu page on the menu bar*/
+ .active {
+  background-color: rgb(71, 79, 103);
+  
+}
+/*Homepage and Menu page background image*/
+ .restaurant-image {
+    background-image: url("../images/restaurant.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  /*Home page text alignment*/
+  .welcome-text {
+    text-align: center;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+ 
+/* Create two equal columns that float next to each other (Menus page)*/
+ .column {
+  float:left;
+  width:50%;   
+  padding: 100px 250px; 
+}
+
+
+/*Style three columns*/ 
+ .column-menu{
+  float: left;
+  padding: 30px;
+}
+ .left, .right{
+  width: 35%;
+ }
+ .middle{
+  width: 30%;
+ }
+
+
+/*Style Beverages menu columns*/
+ .column-beverages{
+  float: left;
+ }
+ .left-b{
+  width: 30%;
+ }
+ .right-b{
+  width: 20%;
+ }
+/*Create two columns for Contact page*/
+ .two_column {
+  float:left;
+  width:50%;   
+  padding: 10px; 
+   
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes columns stack on top of each other instead of next to each other ( */
+@media screen and (max-width: 600px) {
+  .column {
+   width: 100%; /* The width is 100%, when the viewport is 600px or smaller */
+   padding: 20px; 
+  }
+}
+ 
+@media screen and (max-width: 950px) {
+  .column-menu {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+@media screen and (max-width: 600px) {
+  .two_column {
+    width: 100%; /* The width is 100%, when the viewport is 600px or smaller */
+  }
+  .column-beverages{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .column-footer{
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+/*Make embeded map responsive*/    
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+
+/*Style buttons*/
+.button {
+  background-color: #000304;
+  border: solid;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+}
+.button1 {
+  padding: 25px 47px;
+}
+.button2 {
+  padding: 25px 80px;
+}
+.button3 {
+  padding: 25px 67px;
+}  
+.button4 {
+  padding: 25px 49px;
+}
+.button5 {
+  padding: 5px 29px;
+}
+
+/*Style footer*/
+.footer {   
+ background-color: rgba(179, 199, 92, 0.527);    
+ overflow: hidden;  
+}
+.column-footer{
+  float: left;
+  width: 22%;
+  padding: 20px;
+}
+
+
+/*Style menu pages heading font*/ 
+ .menu-font {
+  text-align: center;
+  color: rgb(14, 11, 1);
+ }
+/*Style menu pages font*/ 
+ .menu-font1 {
+  text-align: left;
+  color: rgb(15, 12, 1);
+  font-weight: bold;
+  font-size: 17px;
+ }
+
+.column2{
+  float: left;
+  width: 34%;
+  padding: 20px;
+}
+/* Make embeded Google form responsive */
+
+.responsive-iframe-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  }
+  
+  .responsive-iframe-container iframe,
+  .vresponsive-iframe-container object,
+  .vresponsive-iframe-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  }
+/*Style unordered list margins*/
+  ul li{
+    margin-bottom: 15px;
+  }
