@@ -230,3 +230,25 @@
   ul li{
     margin-bottom: 15px;
   }
+
+  
+  .container {
+    display: flex;
+    background-color: #eaaecc;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: no-wrap;
+  }
+   .container1 {
+    display: flex;
+    background-color: #eaedf0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+   .container2 {
+    display: flex;
+    justify-content: flex-end; 
+    
+   }
+   
